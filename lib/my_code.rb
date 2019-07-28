@@ -52,10 +52,9 @@ def reduce_to_total(source_array, starting_point)
     starting_point = 0
   end 
   
-  for i=0 ; i<source_array.length ; i++ do
-  
+  while i<source_array.length do
     starting_point += source_array[i]
-    
+    i += 1
   end
   starting_point
 end
