@@ -47,13 +47,11 @@ end
 
 def reduce_to_total(source_array, starting_point)
   i=0
-  total = 0
   
-  if starting_point
-    total += starting_point
-  else
+  if starting_point == nil
     starting_point = 0
   end 
+  
   total = 0 + starting_point
   
   while i<source_array.length do
